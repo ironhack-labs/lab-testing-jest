@@ -1,5 +1,5 @@
 /* 
-FOR TEST EXAMPLES AND DIFFERENT MATCHERS (`toEqual`, `toBe`, `not.toBe`, etc) CHECK:
+FOR TEST EXAMPLES AND DIFFERENT MATCHERS (`toEqual`, `toBe`, `not.toBe`, etc):
  https://jasmine.github.io/2.0/introduction
 */
 
