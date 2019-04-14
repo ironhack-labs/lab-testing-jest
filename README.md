@@ -2,9 +2,6 @@
 
 Rewrite the below `console.log` test assertions using Jasmine:
 
-To run the tests open `SpecRunner.html` in the browser.
-
-
 ```js
 // Create a function that converts cents to decimal value
 // Function should return undefined when parameter passed is a string
@@ -44,3 +41,8 @@ console.warn(' -->  Function should return a string representation of a number w
 console.log(centsToDecimals(0) === "0.00$");
 
 ```
+
+
+## Run The Tests
+
+To run the tests open `SpecRunner.html` in the browser.
