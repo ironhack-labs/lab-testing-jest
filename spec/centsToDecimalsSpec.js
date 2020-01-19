@@ -4,10 +4,16 @@ FOR TEST EXAMPLES AND DIFFERENT MATCHERS (`toEqual`, `toBe`, `not.toBe`, etc):
 */
 
 describe("centsToDecimals function", function () { // Describes the suite / group of tests
+ 
+  // Use this test suite as a starting point/reference.
   it("Returns undefined when parameter passed is a string", function () {
     expect(centsToDecimals('abcdef')).toEqual(undefined);
   });
 
+ 
+ 
+  // Fix the below test suites:
+ 
   it("Returns undefined when parameter passed is a string containing number characters", function () {
     // ... complete the below test assertion
     expect(Function_To_Test(parameter)).toEqual(expectedResult);
