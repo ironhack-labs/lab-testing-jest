@@ -8,7 +8,7 @@
 
 
 
-The scope of this exercise is to get familiar with Jasmine and learning to write basic tests. During the exercise you will  rewrite the below simple example tests that were written using `console.log` and instead implement them using the Jasmine framework.
+The scope of this exercise is to get familiar with the Jasmine testing framework and learning how to write basic tests. During the exercise you will  rewrite the below simple example tests that were written using `console.log` and instead implement them using the Jasmine framework.
 
 The simple `console.log` tests were given below as a reference.
 
