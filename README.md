@@ -110,13 +110,13 @@ After cloning the repository, open the file`src/centsToDecimalsSpec.js`. You wil
 
 The initial skeleton of the test suites is already set in place, however you will notice that each test assertion `it(...)` has a placeholder saying `Function_To_Test`, instead of calling the function to test. 
 
-As well you'll notice that each test assertion is missing the expected result value in the `toEqual()` ( or `toBe()`) block and is instead having a placeholder `expected_Result`.
+As well you'll notice that each test assertion is missing the expected result value in the `toEqual()` ( or `toBe()`) block and is instead having a placeholder `Expected_Result`.
 
 
 
 <br>
 
-Use the first example as a starting point and a reference for writting the rest of the tests.
+Use the first example as the starting point and a reference for writting the rest of the tests.
 
 ```js
  // Use this test suite as a starting point/reference.
@@ -131,7 +131,7 @@ it("Returns undefined when parameter passed is a string", function () {
 
 
 
-Additionaly you may want to take a look at the test specs file `src/hello-ironhacker-spec.js` as another reference.
+Additionaly you may want to take a look at the test specs file `src/hello-ironhacker-spec.js` as an additional reference.
 
 
 
