@@ -104,7 +104,7 @@ console.log(centsToDecimals(50273).slice(0, 6) === "502.73");
 
 
 
-After cloning the repository, open the file`src/centsToDecimalsSpec.js`. You will be working in this file.
+After cloning the repository, open the file`spec/centsToDecimalsSpec.js`. You will be working in this file.
 
 
 
