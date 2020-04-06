@@ -7,7 +7,7 @@ describe("centsToDecimals function", function () { // Describes the suite / grou
  
   // Use this test suite as a starting point/reference.
   it("Returns undefined when parameter passed is a string", function () {
-    expect(centsToDecimals('abcdef')).toEqual(undefined);
+    expect(Function_To_Test('abcdef')).toEqual(undefined);
   });
 
  
@@ -20,7 +20,7 @@ describe("centsToDecimals function", function () { // Describes the suite / grou
   });
 
   it("Returns undefined when NaN value is passed as a parameter", function () {
-    expect(centsToDecimals(NaN)).toEqual(undefined);
+    expect(Function_To_Test(NaN)).toEqual(undefined);
   });
 
   it("Returns undefined when undefined value is passed as a parameter", function () {
