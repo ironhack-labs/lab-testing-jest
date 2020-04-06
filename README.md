@@ -157,6 +157,13 @@ The [`it()`](https://jasmine.github.io/api/edge/global.html#it) matcher defines 
 
 <br>
 
+#### [Matchers - `toBe()`, `toEqual()`, etc.](https://jasmine.github.io/api/edge/matchers.html)
+
+Additionally, depending on the scenario that you are testing for you may decide to use different matchers, such as: [`toBe`](https://jasmine.github.io/api/edge/matchers.html#toBe), [`toEqual`](https://jasmine.github.io/api/edge/matchers.html#toEqual), etc.
+You can see the full list of Jasmin matchers [here](https://jasmine.github.io/api/edge/matchers.html).
+
+<br>
+
 
 
 ## Run The Tests
