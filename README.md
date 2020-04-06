@@ -48,11 +48,6 @@ function centsToDecimals(centValue) {
 
 // Should convert value from cents to floating point number with 2 decimals
 
-// Should return a string representation of a number with `$` sign appended at the end
-
-
-
-
 
 // Test Specs:
 
@@ -97,14 +92,6 @@ console.log(centsToDecimals(50273).slice(0, 6) === "502.73");
 // Instead of the entire string, we just want numbers without currency   -> 10.00$
 
 
-// 5
-console.log(
-  "\n -->  should return a string representation of a number with `$` sign appended at the end"
-);
-
-console.log(centsToDecimals(0) === "0.00$");
-console.log(centsToDecimals(999) === "9.99$");
-
 ```
 
 
@@ -123,7 +110,7 @@ After cloning the repository, open the file`src/centsToDecimalsSpec.js`. You wil
 
 The initial skeleton of the test suites is already set in place, however you will notice that each test assertion `it(...)` instead of calling the function to test has a placeholder `Function_To_Test`. 
 
-As well you'll notice that each test assertion is missing the expected result value in the `toEqual(...)` block and is instead having a placeholder `expected_Result`.
+As well you'll notice that each test assertion is missing the expected result value in the `toEqual()` ( or `toBe()`) block and is instead having a placeholder `expected_Result`.
 
 
 
