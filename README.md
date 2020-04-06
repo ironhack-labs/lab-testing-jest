@@ -131,7 +131,7 @@ it("Returns undefined when parameter passed is a string", function () {
 
 
 
-Additionaly you may want to take a look at the test specs file `src/hello-ironhacker-spec.js` as an additional reference.
+Additionaly you may want to take a look at the test specs file `spec/hello-ironhacker-spec.js` as an additional reference.
 
 
 
