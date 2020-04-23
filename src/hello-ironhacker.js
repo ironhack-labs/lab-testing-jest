@@ -1,3 +1,3 @@
-function helloIronhack () {
-  return "Hello Ironhackers!";
+function helloIronhack() {
+  return 'Hello Ironhackers!';
 }
