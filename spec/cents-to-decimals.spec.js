@@ -1,6 +1,6 @@
 /* 
 FOR TEST EXAMPLES AND DIFFERENT MATCHERS (`toEqual`, `toBe`, `not.toBe`, etc):
- https://jasmine.github.io/api/3.5/global
+ https://jasmine.github.io/api/3.4/global
 */
 
 describe('centsToDecimals function', () => {
