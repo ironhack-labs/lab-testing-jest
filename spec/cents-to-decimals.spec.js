@@ -21,14 +21,14 @@ describe('centsToDecimals function', () => {
     // console.log(centsToDecimals('12345') === undefined);
 
     // ... complete the test assertion below
-    expect(Function_To_Test('12345')).toEqual(undefined);
+    expect(centsToDecimals('12345')).toEqual(undefined);
   });
 
   it('Returns undefined when NaN value is passed as a parameter.', () => {
     // console.log(centsToDecimals(NaN) === undefined);
 
     // ... complete the test assertion below
-    expect(Function_To_Test(NaN).toEqual(undefined);
+    expect(centsToDecimals(NaN)).toEqual(undefined);
   });
 
   it('Returns undefined when undefined value is passed as a parameter', () => {
