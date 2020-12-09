@@ -22,6 +22,7 @@ describe('centsToDecimals function', () => {
 
     // ... complete the test assertion below
     expect(Function_To_Test(parameter)).toEqual(Expected_Result);
+    expect(centsToDecimals("12345")).toEqual(undefined);
   });
 
   it('Returns undefined when NaN value is passed as a parameter.', () => {
@@ -29,6 +30,7 @@ describe('centsToDecimals function', () => {
 
     // ... complete the test assertion below
     expect(Function_To_Test(parameter)).toEqual(Expected_Result);
+    expect(centsToDecimals(NaN)).toEqual(undefined);
   });
 
   it('Returns undefined when undefined value is passed as a parameter', () => {
@@ -36,6 +38,7 @@ describe('centsToDecimals function', () => {
 
     // ... complete the test assertion below
     expect(Function_To_Test(parameter)).toEqual(Expected_Result);
+    expect(centsToDecimals(undefined)).toEqual(undefined);
   });
 
   it('Returns undefined when parameter is not passed.', () => {
@@ -43,6 +46,7 @@ describe('centsToDecimals function', () => {
 
     // ... complete the test assertion below
     expect(Function_To_Test(parameter)).toEqual(Expected_Result);
+    expect(centsToDecimals()).toEqual(undefined);
   });
 
   it('Should convert a number of cents to a string representation in a floating number format.', () => {
@@ -50,16 +54,19 @@ describe('centsToDecimals function', () => {
 
     // ... complete the test assertion below
     expect(Function_To_Test(parameter)).toEqual(Expected_Result);
+    expect(centsToDecimals(1000).slice(0,5)).toEqual('10.00');
 
     // console.log(centsToDecimals(50273).slice(0, 6) === '502.73');
 
     // ... complete the test assertion below
     expect(Function_To_Test(parameter)).toEqual(Expected_Result);
+    expect(centsToDecimals(50273).slice(0,6)).toEqual('502.73');
 
     // console.log(centsToDecimals(0).slice(0, 4) === '0.00');
 
     // ... complete the test assertion below
     expect(Function_To_Test(parameter)).toEqual(Expected_Result);
+    expect(centsToDecimals(0).slice(0, 4)).toEqual('0.00');
   });
 
   it('Should return a string representation of a number with `$` sign appended at the end.', () => {
@@ -67,10 +74,12 @@ describe('centsToDecimals function', () => {
 
     // ... complete the test assertion below
     expect(Function_To_Test(parameter)).toEqual(Expected_Result);
+    expect(centsToDecimals(1000)).toEqual("10.00$")
 
     // console.log(centsToDecimals(0) === '0.00$');
 
     // ... complete the test assertion below
     expect(Function_To_Test(parameter)).toEqual(Expected_Result);
+    expect(centsToDecimals(0)).toEqual("0.00$");
   });
 });
