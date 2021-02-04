@@ -49,17 +49,17 @@ describe("centsToDecimals function", () => {
     // console.log(centsToDecimals(1000).slice(0, 5) === '10.00');
 
     // ... complete the test assertion below
-    expect(centsToDecimals(1000)).toEqual("10.00$");
+    expect(centsToDecimals(1000).slice(0, 5)).toEqual("10.00");
 
     // console.log(centsToDecimals(50273).slice(0, 6) === '502.73');
 
     // ... complete the test assertion below
-    expect(centsToDecimals(50273)).toEqual("502.73$");
+    expect(centsToDecimals(50273).slice(0, 6)).toEqual("502.73");
 
     // console.log(centsToDecimals(0).slice(0, 4) === '0.00');
 
     // ... complete the test assertion below
-    expect(centsToDecimals(0)).toEqual("0.00$");
+    expect(centsToDecimals(0).slice(0, 4)).toEqual("0.00");
   });
 
   it("Should return a string representation of a number with `$` sign appended at the end.", () => {
