@@ -5,5 +5,5 @@ function centsToDecimals(centValue) {
 
   let result = centValue / 100;
 
-  return result.toFixed(2) + '$';
+  return `${result.toFixed(2)}$`;
 }
