@@ -7,3 +7,7 @@ function centsToDecimals(centValue) {
 
   return result.toFixed(2) + '$';
 }
+
+
+
+console.log(centsToDecimals(1000))
