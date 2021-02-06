@@ -1,9 +1,8 @@
-function centsToDecimals(centValue) {
-  if (typeof centValue !== 'number' || isNaN(centValue)) {
-    return undefined;
+function centsToDecimals(centValue){
+  if (typeof centValue !== 'number'){
+    return undefined
+  } else if(isNaN(centValue)){
+    return undefined
   }
-
-  let result = centValue / 100;
-
-  return result.toFixed(2) + '$';
+  return ((centValue/100).toFixed(2) + '$')
 }
