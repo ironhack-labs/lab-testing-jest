@@ -42,7 +42,7 @@ describe('centsToDecimals function', () => {
     // console.log(centsToDecimals() === undefined);
 
     // ... complete the test assertion below
-    expect(Function_To_Test(parameter)).toEqual(undefined);
+    expect(centsToDecimals()).toEqual(undefined);
   });
 
   it('Should convert a number of cents to a string representation in a floating number format.', () => {
