@@ -1,6 +1,6 @@
 describe('Hello Ironhack function', () => {
   // Describes the group of tests
-  it('Greets an Ironhacker', () => {
+  it('should greet an Ironhacker', () => {
     //  Describes the test unit itself
 
     //  Test assertion. Here the function is called with test parameters and expected result is specified `toEqual`
