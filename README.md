@@ -2,15 +2,27 @@
 
 # LAB | Intro to testing with Jest
 
-![img](https://camo.githubusercontent.com/d3afdfc8b8075b9daf5109c4af7b8b07ab2d7c04/68747470733a2f2f7261776769746875622e636f6d2f6a61736d696e652f6a61736d696e652f6d61737465722f696d616765732f6a61736d696e652d686f72697a6f6e74616c2e737667)
+<br>
+
+![img](https://media.giphy.com/media/3o6Mbbs879ozZ9Yic0/giphy.gif)
+
+<br>
 
 ## Introduction
 
-The scope of this exercise is to get familiar with the Jest testing framework and learn how to write basic tests.
+<br>
+
+The scope of this exercise is to learn how to **write basic tests**.
+
+<br>
 
 Up to this point, you have worked with tests in almost every lab. Tests were written prior and you would develop solution based on tests. Today you will take a bit different turn, and develop tests for already _"working"_ solution. The goal is to get basic understanding of how testing frameworks work in general and to get familiar with some of the most used testing approaches.
 
+Now, the time has come to get your hands (at least a bit) dirty with writing some basic tests using Jest framework.
+
 A friendly reminder - you will be developing tests for just one small piece of code, just one function better saying. In this case, we are talking about you developing _unit_ tests, since you will be testing just one _"unit"_ or a small component of your (imaginary) whole application. To learn more about unit (and integration) tests, check the extra resources section.
+
+<br>
 
 ## Requirements
 
@@ -29,6 +41,8 @@ $ git push origin master
 ```
 
 - Create Pull Request so your TAs can check up your work.
+
+<br>
 
 ## Test, test, test!
 
@@ -69,6 +83,8 @@ expect(centsToDecimals('abcdef')).toEqual(undefined);
 
 Following the same logic, go through the rest of tests, making sure they are passing in the end.
 
+<br>
+
 ### Getting Started
 
 After cloning the repository, open the file `spec/cents-to-decimals.spec.js`. You will be working in this file.
@@ -86,11 +102,17 @@ it('should return undefined when parameter passed is a string', () => {
 
 :wink: In case you need a bit more help, check the test specs file `spec/hello-ironhacker.spec.js` as an additional reference.
 
+<br>
+
 ### Run The Tests
 
 To run the automated tests, please, open your terminal, change directories into the root of the lab, and run `npm install` to install the test runner. Now, you can run the `npm run test:watch` command to run automated tests in watch mode. Open the resulting `lab-solution.html` file with the "Live Server" VSCode extension to always see the most up to date test results.
 
+<br>
+
 ### Suites
+
+<br>
 
 #### [`describe()`](https://jestjs.io/docs/api#describename-fn) Your Tests
 
@@ -98,17 +120,25 @@ The [describe](https://jestjs.io/docs/api#describename-fn) function is used for 
 
 The string parameter is for naming the collection of specs.
 
+<br>
+
 #### Write A Test - [`it()`](https://jestjs.io/docs/api#testname-fn-timeout)
 
 The [`it()`](https://jestjs.io/docs/api#testname-fn-timeout) function (or the `test` function, which works as an alias)defines a single spec (test). It should contain one or more `expectations` that test the state of the code.
+
+<br>
 
 #### [Matchers - `toBe()`, `toEqual()`, etc.](https://jestjs.io/docs/expect)
 
 Additionally, depending on the scenario that you are testing for you may decide to use different matchers, such as: [`toBe`](https://jestjs.io/docs/expect#tobevalue), [`toEqual`](https://jestjs.io/docs/expect#toequalvalue), etc.
 You can see the full list of Jest matchers [here](https://jestjs.io/docs/expect).
 
+<br>
+
 ## Extra Resources
 
 - [Difference between unit and integration tests - StackOverflow](https://stackoverflow.com/questions/5357601/whats-the-difference-between-unit-tests-and-integration-tests)
+
+<br>
 
 **Happy coding!** :heart:
