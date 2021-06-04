@@ -1,12 +1,12 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# LAB | Intro to testing with Jasmine
+# LAB | Intro to testing with Jest
 
 ![img](https://camo.githubusercontent.com/d3afdfc8b8075b9daf5109c4af7b8b07ab2d7c04/68747470733a2f2f7261776769746875622e636f6d2f6a61736d696e652f6a61736d696e652f6d61737465722f696d616765732f6a61736d696e652d686f72697a6f6e74616c2e737667)
 
 ## Introduction
 
-The scope of this exercise is to get familiar with the Jasmine testing framework and learn how to write basic tests.
+The scope of this exercise is to get familiar with the Jest testing framework and learn how to write basic tests.
 
 Up to this point, you have worked with tests in almost every lab. Tests were written prior and you would develop solution based on tests. Today you will take a bit different turn, and develop tests for already _"working"_ solution. The goal is to get basic understanding of how testing frameworks work in general and to get familiar with some of the most used testing approaches.
 
@@ -14,10 +14,9 @@ A friendly reminder - you will be developing tests for just one small piece of c
 
 ## Requirements
 
-    expect(Function_To_Test(parameter)).toEqual(Expected_Result);
-
 - Fork this repo
 - Then clone this repo.
+- Visit the "actions" tab in your fork, and enable workflows
 
 ## Submission
 
@@ -25,7 +24,7 @@ A friendly reminder - you will be developing tests for just one small piece of c
 
 ```shell
 $ git add .
-$ git commit -m "done"
+$ git commit -m "Solved lab"
 $ git push origin master
 ```
 
@@ -33,9 +32,9 @@ $ git push origin master
 
 ## Test, test, test!
 
-In this exercise, **your goal is to rewrite the simple example tests that were written just with the `console.log()` method, and instead, implement them using the Jasmine framework.**
+In this exercise, **your goal is to rewrite the simple example tests that were written just with the `console.log()` method, and instead, implement them using the Jest framework.**
 
-Here is the example of a single test, which was written using the `console.log()` and then re-written using the proper Jasmine syntax and specific Jasmine methods:
+Here is the example of a single test, which was written using the `console.log()` and then re-written using the proper Jest syntax and specific Jest methods:
 
 ```javascript
 function centsToDecimals(centValue) {
@@ -58,10 +57,10 @@ function centsToDecimals(centValue) {
 // 1: Should return undefined when the parameter passed is a string
 console.log('-->  should return undefined when parameter passed is a string');
 
-// you  are  given  the following:
+// you are given the following:
 console.log(centsToDecimals('abcdef') === undefined);
 
-// this is the Jasmine expression that needs to  be updated accordingly:
+// this is the Jest expression that needs to  be updated accordingly:
 expect(Function_To_Test(parameter)).toEqual(Expected_Result);
 
 // solution: replace placeholders with corresponding function/value
@@ -76,13 +75,11 @@ After cloning the repository, open the file `spec/cents-to-decimals.spec.js`. Yo
 
 The initial skeleton of the test suites is already set in place; however, you will notice that each test assertion `it(...)` has a placeholder saying `Function_To_Test`, instead of calling the function to test. As well, you will notice that each test assertion is missing the expected result value in the `toEqual()` (or `toBe()`) block and is instead having a placeholder `Expected_Result`.
 
-<br>
-
 Use the first example as the starting point and a reference for writing the rest of the tests.
 
 ```js
 // Use this test suite as a starting point/reference.
-it('Returns undefined when parameter passed is a string', () => {
+it('should return undefined when parameter passed is a string', () => {
   expect(centsToDecimals('abcdef')).toEqual(undefined);
 });
 ```
@@ -91,24 +88,24 @@ it('Returns undefined when parameter passed is a string', () => {
 
 ### Run The Tests
 
-To run the tests, open `SpecRunner.html` in the browser.
+To run the automated tests, please, open your terminal, change directories into the root of the lab, and run `npm install` to install the test runner. Now, you can run the `npm run test:watch` command to run automated tests in watch mode. Open the resulting `lab-solution.html` file with the "Live Server" VSCode extension to always see the most up to date test results.
 
 ### Suites
 
-#### [`describe()`](https://jasmine.github.io/tutorials/your_first_suite) Your Tests
+#### [`describe()`](https://jestjs.io/docs/api#describename-fn) Your Tests
 
-The [describe](https://jasmine.github.io/api/edge/global.html#describe) function is used for grouping related specs (tests), typically each test file has one at the top level.
+The [describe](https://jestjs.io/docs/api#describename-fn) function is used for grouping related specs (tests), typically each test file has one at the top level.
 
 The string parameter is for naming the collection of specs.
 
-#### Write A Test - [`it()`](https://jasmine.github.io/api/edge/global.html#it)
+#### Write A Test - [`it()`](https://jestjs.io/docs/api#testname-fn-timeout)
 
-The [`it()`](https://jasmine.github.io/api/edge/global.html#it) matcher defines a single spec (test). It should contain one or more `expectations` that test the state of the code.
+The [`it()`](https://jestjs.io/docs/api#testname-fn-timeout) function (or the `test` function, which works as an alias)defines a single spec (test). It should contain one or more `expectations` that test the state of the code.
 
-#### [Matchers - `toBe()`, `toEqual()`, etc.](https://jasmine.github.io/api/edge/matchers.html)
+#### [Matchers - `toBe()`, `toEqual()`, etc.](https://jestjs.io/docs/expect)
 
-Additionally, depending on the scenario that you are testing for you may decide to use different matchers, such as: [`toBe`](https://jasmine.github.io/api/edge/matchers.html#toBe), [`toEqual`](https://jasmine.github.io/api/edge/matchers.html#toEqual), etc.
-You can see the full list of Jasmine matchers [here](https://jasmine.github.io/api/edge/matchers.html).
+Additionally, depending on the scenario that you are testing for you may decide to use different matchers, such as: [`toBe`](https://jestjs.io/docs/expect#tobevalue), [`toEqual`](https://jestjs.io/docs/expect#toequalvalue), etc.
+You can see the full list of Jest matchers [here](https://jestjs.io/docs/expect).
 
 ## Extra Resources
 
