@@ -8,5 +8,6 @@ function centsToDecimals(centValue) {
   return result.toFixed(2) + '$';
 }
 
+//console.log(centsToDecimals(10));
 // The following is required to make automated tests run. Please ignore it.
 if (typeof module !== 'undefined') module.exports = { centsToDecimals };
