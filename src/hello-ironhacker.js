@@ -1,3 +1,5 @@
+const helloIronhack = require('../src/hello-ironhacker').helloIronhack 
+
 function helloIronhack() {
   return 'Hello Ironhackers!';
 }
