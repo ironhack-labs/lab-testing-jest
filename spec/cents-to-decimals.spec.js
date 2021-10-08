@@ -4,7 +4,7 @@ FOR TEST EXAMPLES AND DIFFERENT MATCHERS (`toEqual`, `toBe`, `not.toBe`, etc):
 https://jestjs.io/docs/using-matchers
 */
 
-const centsToDecimals = require('../src/cents-to-decimals').centsToDecimals
+const centsToDecimals = require('../src/cents-to-decimals');
 
 describe('centsToDecimals function', () => {
   // Describes the suite / group of tests
@@ -52,7 +52,7 @@ describe('centsToDecimals function', () => {
     //console.log(centsToDecimals(1000).slice(0, 5) === '10.00');
 
     // ... complete the test assertion below
-    expect(centsToDecimals(1000).slice(0,5)).toEqual('10,00');
+    expect(centsToDecimals(1000).slice(0,5)).toEqual('10.00');
 
     //console.log(centsToDecimals(50273).slice(0, 6) === '502.73');
 
