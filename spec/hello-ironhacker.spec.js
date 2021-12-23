@@ -1,3 +1,5 @@
+const helloIronhack = require("../src/hello-ironhacker")
+
 describe('Hello Ironhack function', () => {
   // Describes the group of tests
   it('should greet an Ironhacker', () => {
@@ -7,4 +9,7 @@ describe('Hello Ironhack function', () => {
     expect(helloIronhack()).toEqual('Hello Ironhacker!');
     //  Method `.toEqual` is called a "matcher" and is used to check the returned result when calling a function
   });
+  it("should be a function",()=>{
+    expect(typeof helloIronhack).toBe("function")
+  })
 });
