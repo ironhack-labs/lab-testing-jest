@@ -1,4 +1,6 @@
-describe('Hello Ironhack function', () => {
+const { helloIronhack } = require("../src/hello-ironhacker");
+
+describe(helloIronhack, () => {
   // Describes the group of tests
   it('should greet an Ironhacker', () => {
     //  Describes the test unit itself
