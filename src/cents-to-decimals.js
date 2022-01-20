@@ -10,3 +10,5 @@ function centsToDecimals(centValue) {
 
 // The following is required to make automated tests run. Please ignore it.
 if (typeof module !== 'undefined') module.exports = { centsToDecimals };
+
+console.log(typeof centsToDecimals(1000).slice(0, 5));
