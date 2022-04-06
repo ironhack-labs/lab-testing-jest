@@ -1,5 +1,5 @@
 describe('Hello Ironhack function', () => {
-  // Describes the group of tests
+  
   it('should greet an Ironhacker', () => {
     //  Describes the test unit itself
 
