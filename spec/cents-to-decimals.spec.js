@@ -3,10 +3,9 @@ FOR TEST EXAMPLES AND DIFFERENT MATCHERS (`toEqual`, `toBe`, `not.toBe`, etc):
 https://jestjs.io/docs/using-matchers
 */
 
-describe('centsToDecimals function', () => {
-  // Describes the suite / group of tests
+  const { centsToDecimals } = require("../src/cents-to-decimals");
 
-  // Use this test suite as a starting point/reference.
+  describe('centsToDecimals function', () => {
 
   it('should returns undefined when parameter passed is a string.', () => {
     // console.log(centsToDecimals('abcdef') === undefined);
@@ -22,10 +21,11 @@ describe('centsToDecimals function', () => {
 
     // ... complete the test assertion below
     expect(Function_To_Test(parameter)).toEqual(Expected_Result);
+    expect(centsToDecimals('12345')).toEqual(undefined);
   });
 
   it('should returns undefined when NaN value is passed as a parameter.', () => {
-    // console.log(centsToDecimals(NaN) === undefined);
+    expect(centsToDecimals(NaN)).toEqual(undefined);
 
     // ... complete the test assertion below
     expect(Function_To_Test(parameter)).toEqual(Expected_Result);
@@ -36,6 +36,7 @@ describe('centsToDecimals function', () => {
 
     // ... complete the test assertion below
     expect(Function_To_Test(parameter)).toEqual(Expected_Result);
+    expect(centsToDecimals(undefined)).toEqual(undefined);
   });
 
   it('should returns undefined when parameter is not passed.', () => {
