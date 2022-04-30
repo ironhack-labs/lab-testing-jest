@@ -1,4 +1,4 @@
-const helloIronhack = require('../src/hello-ironhacker'); //src\hello-ironhacker.js
+const { helloIronhack } = require('../src/hello-ironhacker'); //src\hello-ironhacker.js
 
 describe('Hello Ironhack function', () => {
   // Describes the group of tests
