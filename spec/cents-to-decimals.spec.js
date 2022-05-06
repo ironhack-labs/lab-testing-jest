@@ -4,7 +4,7 @@ https://jestjs.io/docs/using-matchers
 */
 
 describe('centsToDecimals function', () => {
-  // Describes the suite / group of tests
+  // Describe the suite / group of tests
 
   // Use this test suite as a starting point/reference.
 
